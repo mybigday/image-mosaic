@@ -15,7 +15,7 @@ $ yarn add @fugood/image-mosaic
 import mosaic from '@fugood/image-mosaic'
 ```
 
-See the [test](src/__tests__/index.spec.js) as usage, you can also refer to [the test fixtures](src/__tests__/) and [image snapshots](src/__tests__/__image_snapshots).
+See the [test](src/__tests__/index.spec.js) as usage, you can also refer to [the test fixtures](src/__tests__/) and [image snapshots](src/__tests__/__image_snapshots__).
 
 ## License
 
