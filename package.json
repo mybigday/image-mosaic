@@ -1,7 +1,7 @@
 {
   "name": "imagemosaic",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --ignore __tests__",
     "test": "jest"
