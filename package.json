@@ -1,0 +1,25 @@
+{
+  "name": "imagemosaic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --ignore __tests__",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "repository": "mybigday/image-mosaic",
+  "dependencies": {
+    "canvas": "^1.6.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^22.4.0",
+    "jest-image-snapshot": "^2.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
