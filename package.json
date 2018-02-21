@@ -1,5 +1,5 @@
 {
-  "name": "imagemosaic",
+  "name": "@fugood/image-mosaic",
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
