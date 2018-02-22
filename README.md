@@ -17,12 +17,22 @@ See the [test](src/__tests__/index.spec.js) as usage, you can also refer to [the
 import mosaic from '@fugood/image-mosaic'
 
 mosaic({
-  width: 1024,
-  height: 768,
-  target: fs.readFileSync(path.join(__dirname, 'target.jpg')),
+  // The width of the canvas.
+  width: 400,
+  // The height of the canvas.
+  height: 400,
+  // The number of columns of images in the mosaic.
+  columns: 40,
+  // The number of rows of images in the mosaic.
+  rows: 40,
+  // The amount of blending between each image and its matching color. A number between 0 and 1.
+  colorBlending: 0.8,
+  // The target image to recreate. Can be a string or an image, the string is assumed to be a url to an image. Expected file buffer.
+  target: fs.readFileSync('path/to/image'),
+  // An array with urls to images to be used to build the mosaic.
   sources: [
-    fs.readFileSync(path.join(__dirname, 'source1.png')),
-    fs.readFileSync(path.join(__dirname, 'source2.jpg')),
+    fs.readFileSync('path/to/image1'),
+    fs.readFileSync('path/to/image2'),
   ],
 }).then(canvas => {
   const result = canvas.toBuffer()
