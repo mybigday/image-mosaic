@@ -1,3 +1,7 @@
+/*
+ * Edit from https://github.com/thejsn/react-image-mosaic/blob/master/src/grid.js
+ */
+
 const Canvas = require('canvas')
 
 export default class Grid {
@@ -236,8 +240,7 @@ export default class Grid {
         }
 
         if (blending > 0) {
-          ctx.fillStyle =
-            'rgba(' + red + ', ' + green + ', ' + blue + ', ' + blending + ')'
+          ctx.fillStyle = `rgba(${red}, ${green}, ${blue}, ${blending})`
           ctx.fillRect(x, y, w, h)
         }
       }

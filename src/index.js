@@ -2,6 +2,12 @@ import Canvas, { Image } from 'canvas'
 import Grid from './grid'
 import Picture from './picture'
 
+const createImage = buffer => {
+  const img = new Image()
+  img.src = buffer
+  return img
+}
+
 const getPixelAspectRatio = (width, height, columns, rows) =>
   width / columns / (height / rows)
 
@@ -22,11 +28,9 @@ export default function(props = {}) {
   grid.setSize(width, height, columns, rows)
 
   if (sources.length) {
-    sources.forEach(image => {
-      const img = new Image()
-      img.src = image
+    sources.forEach(src => {
       const picture = new Picture(
-        img,
+        createImage(src),
         Math.floor(width / columns),
         Math.floor(height / rows),
       )
@@ -36,9 +40,7 @@ export default function(props = {}) {
 
   let targetPicture
   if (target && grid.poolSize > 0) {
-    const img = new Image()
-    img.src = target
-    targetPicture = new Picture(img, columns, rows)
+    targetPicture = new Picture(createImage(target), columns, rows)
     targetPicture.setSize(
       columns,
       rows,
@@ -46,9 +48,7 @@ export default function(props = {}) {
     )
     return grid.setTarget(targetPicture).then(() => {
       const context = canvas.getContext('2d')
-
-      context.fillRect(10, 10, 100, 100)
-      context.drawImage(grid._canvas, 0, 0, width, height)
+      context.drawImage(grid.canvas, 0, 0, width, height)
       return canvas
     })
   }

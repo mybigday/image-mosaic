@@ -1,3 +1,7 @@
+/*
+ * Edit from https://github.com/thejsn/react-image-mosaic/blob/master/src/picture.js
+ */
+
 import Canvas from 'canvas'
 
 export default class Picture {
