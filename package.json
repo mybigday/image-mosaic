@@ -6,6 +6,7 @@
     "build": "babel src --out-dir lib --ignore __tests__",
     "test": "jest"
   },
+  "keywords": ["image", "mosaic", "montage", "node", "canvas"],
   "license": "MIT",
   "repository": "mybigday/image-mosaic",
   "dependencies": {

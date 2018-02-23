@@ -1,4 +1,4 @@
-# @fugood/image-mosaic
+# @fugood/image-mosaic [![Build Status](https://travis-ci.org/mybigday/image-mosaic.svg?branch=master)](https://travis-ci.org/mybigday/image-mosaic) [![NPM version](http://img.shields.io/npm/v/@fugood/image-mosaic.svg?style=flat)](https://www.npmjs.com/package/@fugood/image-mosaic)
 
 Creates an image mosaic,
 this package was forked from [`react-image-mosaic`](https://github.com/thejsn/react-image-mosaic) and used [`node-canvas`](https://github.com/Automattic/node-canvas).
