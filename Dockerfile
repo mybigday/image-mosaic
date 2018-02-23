@@ -1,4 +1,5 @@
 # We're using this library for AWS Lambda (Node.js 6.10)
+# This docker file is just for test
 
 FROM amazonlinux
 
@@ -19,5 +20,3 @@ RUN yum clean all
 RUN rm --force ns.rpm
 
 WORKDIR /build
-
-RUN yarn
