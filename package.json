@@ -1,6 +1,6 @@
 {
   "name": "@fugood/image-mosaic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --ignore __tests__",
