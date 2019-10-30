@@ -7,4 +7,4 @@ before_install:
   - docker build --rm -t futest/image-mosaic .
 
 script:
-  - docker run --volume ${PWD}:/build futest/image-mosaic /bin/bash -c "yarn && yarn build && yarn test"
+  - docker run --volume ${PWD}:/build futest/image-mosaic /bin/bash -c "yarn"
